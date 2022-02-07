@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import './HeaderHome.css'
+import { Link } from "react-router-dom";
+import './HeaderHome.css';
+import imageHome1 from '../../assets/imagens/Home/homen.jpg';
+import imageHome2 from '../../assets/imagens/Home/É essa que vai para home.jpg';
+import imageHome3 from '../../assets/imagens/Home/É essa que vai para home.jpg';
+
+
 class HeaderHome extends Component{
     render(){
         return(
@@ -33,7 +39,7 @@ class HeaderHome extends Component{
               </div>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                {/**  <img src={imageHome1} width="100%" alt="" /> */}
+                <img src={imageHome1} width="100%" alt="" /> 
                   <svg
                     className="bd-placeholder-img"
                     width="100%"
@@ -54,18 +60,18 @@ class HeaderHome extends Component{
                         slide of the carousel.
                       </p>
                       <p>
-                        <a
+                        <Link
                           className="btn btn-lg btn-primary"
-                          href="Destinos.html"
+                          to="/Destinos"
                         >
                           Veja Mais Em Destinos
-                        </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  {/**<img src={imageHome2} width="100%" alt="" />**/}
+                  <img src={imageHome2} width="100%" alt="" />
                   <svg
                     className="bd-placeholder-img"
                     width="100%"
@@ -86,15 +92,15 @@ class HeaderHome extends Component{
                         slide of the carousel.
                       </p>
                       <p>
-                        <a className="btn btn-lg btn-primary" href="Contato.html">
+                        <Link className="btn btn-lg btn-primary" to="/Contato">
                           Veja Mais Em Contatos
-                        </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="carousel-item">
-                {/**  <img src={imageHome3} width="100%" alt="" />**/}
+                 <img src={imageHome3} width="100%" alt="" />
                   <svg
                     className="bd-placeholder-img"
                     width="100%"
@@ -115,12 +121,12 @@ class HeaderHome extends Component{
                         slide of this carousel.
                       </p>
                       <p>
-                        <a
+                        <Link
                           className="btn btn-lg btn-primary"
-                          href="Promocoes.html"
+                          to="/Promocoes"
                         >
                           Veja mais em Promoções
-                        </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
