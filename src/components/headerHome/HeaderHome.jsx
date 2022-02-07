@@ -60,12 +60,11 @@ class HeaderHome extends Component{
                         slide of the carousel.
                       </p>
                       <p>
-                        <Link
-                          className="btn btn-lg btn-primary"
-                          to="/Destinos"
-                        >
+                        <Link  to="/Destinos"  className="btn btn-lg btn-primary">
+                        <a>
                           Veja Mais Em Destinos
-                        </Link>
+                        </a>
+                          </Link>
                       </p>
                     </div>
                   </div>
@@ -92,8 +91,10 @@ class HeaderHome extends Component{
                         slide of the carousel.
                       </p>
                       <p>
-                        <Link className="btn btn-lg btn-primary" to="/Contato">
+                        <Link to="/Contato" className="btn btn-lg btn-primary" >
+                        <a >
                           Veja Mais Em Contatos
+                        </a>
                         </Link>
                       </p>
                     </div>
@@ -121,11 +122,8 @@ class HeaderHome extends Component{
                         slide of this carousel.
                       </p>
                       <p>
-                        <Link
-                          className="btn btn-lg btn-primary"
-                          to="/Promocoes"
-                        >
-                          Veja mais em Promoções
+                        <Link  to="/Promocoes"  className="btn btn-lg btn-primary">
+                        <a>Veja mais em Promoções</a>
                         </Link>
                       </p>
                     </div>

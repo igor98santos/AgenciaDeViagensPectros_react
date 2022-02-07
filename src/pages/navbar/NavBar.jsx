@@ -9,7 +9,9 @@ class NavBar extends Component{
           
             <nav className="navbar fixed-top navbar-expand-lg  p-md-3">
             <div className="container">
-              <Link className="navbar-brand" to="/" >Agência/Pectros</Link>
+              <Link to="/" className="navbar-brand"  >
+              <a>Agência/Pectros</a>
+              </Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"><img src={icone} alt="Icone"/>Icone</span>
@@ -19,24 +21,28 @@ class NavBar extends Component{
                 <div className="mx-auto"></div>
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link to="/">
-                      <a className="nav-link text-white" href="Home">Home</a>
-                    </Link>
+                <Link to="/" className="nav-link text-white">
+                      <a>Home</a>
+                </Link>
+                   
                   </li>
                   <li className="nav-item">
-                    <Link to="/Promocoes">
-                      <a className="nav-link text-white" href="promocoes" >Promoções</a>
-                      </Link>
+                  <Link to="/Promocoes" className="nav-link text-white">
+                      <a   >Promoções</a>
+                  </Link>
+                    
                   </li>
                   <li className="nav-item">
-                    <Link  to="/Destinos">
-                      <a className="nav-link text-white" href="Destinos">Destino</a>
-                      </Link>
+                  <Link to="/Destinos" className="nav-link text-white">
+                          <a>Destino</a>
+                  </Link>
+                    
                   </li>
                   <li className="nav-item">
-                    <Link  to="/Contato">
-                      <a className="nav-link text-white" href="Contatos">Contatos</a>
-                      </Link>
+                 <Link to="/Contatos" className="nav-link text-white">
+                      <a>Contatos</a>
+                 </Link>
+                   
                   </li>
                 </ul>
               </div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./CardsHome1.css";
-import imageHome1 from "../../assets/imagens/cards de preço da home/israel/Israel 3.jpg"
+import { Link } from "react-router-dom";
+import imageHome1 from "../../assets/imagens/cards de preço da home/israel/Israel 3.jpg";
 import imageHome2 from "../../assets/imagens/cards de preço da home/Englaterra/palace-gf12d11303_640.jpg";
 import imageHome3 from "../../assets/imagens/cards de preço da home/italia/canal-g31aaf8247_640.jpg";
 import imageHome4 from "../../assets/imagens/cards de preço da home/noruega/aurora-borealis-g3b9626256_640.jpg";
@@ -170,12 +171,9 @@ class CardsHome extends Component {
                     <p className="card-text">
                       Suprise this one has content on the back!
                     </p>
-                    <a
-                      href="Destinos.html"
-                      className="btn btn-outline-secondary"
-                    >
-                      Cliqe Aqui
-                    </a>
+                    <Link to="/Destino" className="btn btn-outline-secondary">
+                      <a> Cliqe Aqui</a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -199,16 +197,17 @@ class CardsHome extends Component {
                     <p className="card-text">
                       Suprise this one has content on the back!
                     </p>
-                    <a href="Contato.html" className="btn btn-outline-primary">
-                      Clique Aqui
-                    </a>
+
+                    <Link to="/Contato" className="btn btn-outline-primary">
+                      <a>Clique Aqui</a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          
+          <br />
+          <br />
         </div>
       </div>
     );
